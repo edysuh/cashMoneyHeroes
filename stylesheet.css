@@ -14,6 +14,23 @@ html {
 	float: left;
 }
 
+#logo_img{
+	width: 250px;
+	height: 100px;
+
+}
+
+#settings_img{
+	width: 80px;
+	height: 80px;
+
+}
+
+#trends_img{
+	width: 80px;
+	height: 80px;
+}
+
 #settings {
 	float: right;
 }
