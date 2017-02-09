@@ -1,0 +1,29 @@
+{
+  "name": "cashmoneyheroes",
+  "version": "1.0.0",
+  "description": "money budgeting app for college students",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edysuh/cashMoneyHeroes.git"
+  },
+  "keywords": [
+    "money",
+    "budget",
+    "college",
+    "students"
+  ],
+  "author": "cashmoneyheroes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edysuh/cashMoneyHeroes/issues"
+  },
+  "homepage": "https://github.com/edysuh/cashMoneyHeroes#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "mongoose": "^4.8.1"
+  }
+}
