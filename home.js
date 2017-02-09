@@ -13,7 +13,6 @@ function calcSpendingBarWidth(category, total) {
 	} else {
 		spent_category.style.width = '100%';
 	}
-	
 }
 
 calcSpendingBarWidth("food", "totalbar");
@@ -29,7 +28,6 @@ calcSpendingBarWidth("catbaralcohol","catAlcohol");
 calcSpendingBarWidth("catbartextbook","catTextbook");
 
 dropdown.onclick = () => {
-	console.log("clicked!");
 	const categories = document.getElementById("categories");
 	categories.style.display = "inline-block";
 };

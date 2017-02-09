@@ -2,6 +2,7 @@ html {
 	font-family: "Verdana", sans-serif !important;
 	font-size: 32px;
 	/* background: AliceBlue; */
+	background: WhiteSmoke;
 }
 
 #background {
@@ -102,7 +103,6 @@ html {
 }
 
 #totalbar {
-	background: white;
 	width: 80%;
 	height: 50px;
 	margin: auto;
