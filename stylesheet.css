@@ -79,6 +79,32 @@ html {
 	border-width: 1px;
 }
 
+#totalbar > .subtotal {
+	width: 10%;
+	height: 100%;
+	float: left;
+}
+
+#food {
+	background-color: lightgreen;
+}
+
+#coffee {
+	background-color: pink;
+}
+
+#clothes {
+	background-color: yellow;
+}
+
+#alcohol {
+	background-color: blue;
+}
+
+#textbooks {
+	background-color: purple;
+}
+
 #dropdownbutton {
 	width: 75px;
 	height: 75px;
@@ -99,6 +125,14 @@ html {
 	border-width: 1px;
 }
 
+.category {
+	width: 100%;
+	height: 100px;
+	margin-top: 1%;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+}
 
 .bar {
 	width: 1000px;
