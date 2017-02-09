@@ -8,35 +8,52 @@ html {
 	border-color: black;
 	border-style: solid;
 	border-width: 1px;
+	position: relative;
+	padding-bottom: 2%
 }
 
-#logo {
+/*#logo {
 	float: left;
 }
+*/
 
 #logo_img{
-	width: 250px;
-	height: 100px;
+	float: left;
+	max-width: 100%;
+	max-height: 130px;
+	overflow: hidden;
 
 }
 
 #settings_img{
-	width: 80px;
-	height: 80px;
+	float: right;
+	max-width: 80%;
+	max-height: 100px;
+	overflow: hidden;
 
 }
 
 #trends_img{
-	width: 80px;
-	height: 80px;
+	float: right;
+	max-width: 80%;
+	max-height: 100px;
+	overflow: hidden;
+
 }
 
 #settings {
 	float: right;
+	padding-top: 25px;
+	width: 80px;
+	height: auto;
+	
 }
 
 #trends {
 	float: right;
+	width:80px;
+	padding-top: 25px;
+	height: auto;
 }
 
 #total {
