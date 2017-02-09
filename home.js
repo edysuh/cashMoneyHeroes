@@ -1,4 +1,5 @@
 const dropdown = document.getElementById("dropdownbutton");
+var dropdown_flag = false;
 console.log('dropdown', dropdown);
 
 function calcSpendingBarWidth(category, total) {
@@ -29,5 +30,15 @@ calcSpendingBarWidth("catbartextbook","catTextbook");
 
 dropdown.onclick = () => {
 	const categories = document.getElementById("categories");
-	categories.style.display = "inline-block";
+	
+	if (!dropdown_flag) {
+		categories.style.display = "inline-block";
+		dropdown_flag = true;
+		dropdown.style.transform = "rotate(180deg)";
+		categories.scrollIntoView();
+	} else {
+		categories.style.display = "none";
+		dropdown_flag = false;
+		dropdown.style.transform = "rotate(0deg)";
+	}
 };
