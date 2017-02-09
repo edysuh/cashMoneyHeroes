@@ -1,33 +1,35 @@
-console.log("hello from home.js");
+const dropdown = document.getElementById("dropdownbutton");
+console.log('dropdown', dropdown);
 
-function calcSubtotalWidth(cat) {
-	const totalbar = document.getElementById("totalbar");
-	const cat_sub_bar = document.getElementById(cat);
-	var totalvalue = totalbar.getAttribute("value");
-	var cat_sub_value = cat_sub_bar.getAttribute("value");
+function calcSpendingBarWidth(category, total) {
+	const total_bar = document.getElementById(total);
+	const spent_category = document.getElementById(category);
+	var total_value = total_bar.getAttribute("value");
+	var spent_value = spent_category.getAttribute("value");
+	var ratio = spent_value / total_value;
 	
-	cat_sub_bar.style.width = cat_sub_value / totalvalue * 100 + '%';
+	if (ratio < 1) {
+		spent_category.style.width = ratio * 100 + '%';
+	} else {
+		spent_category.style.width = '100%';
+	}
+	
 }
 
-function calcCatWidth(cat,catTot) {
-	const totalbar = document.getElementById(catTot);
-	const cat_sub_bar = document.getElementById(cat);
-	var totalvalue = totalbar.getAttribute("value");
-	var cat_sub_value = cat_sub_bar.getAttribute("value");
-	
-	cat_sub_bar.style.width = cat_sub_value / totalvalue * 100 + '%';
-}
+calcSpendingBarWidth("food", "totalbar");
+calcSpendingBarWidth("coffee", "totalbar");
+calcSpendingBarWidth("clothes", "totalbar");
+calcSpendingBarWidth("alcohol", "totalbar");
+calcSpendingBarWidth("textbooks", "totalbar");
 
+calcSpendingBarWidth("catbarfood","catFood");
+calcSpendingBarWidth("catbarcoffee","catCoffee");
+calcSpendingBarWidth("catbarclothes","catClothes");
+calcSpendingBarWidth("catbaralcohol","catAlcohol");
+calcSpendingBarWidth("catbartextbook","catTextbook");
 
-calcSubtotalWidth("food");
-calcSubtotalWidth("coffee");
-calcSubtotalWidth("clothes");
-calcSubtotalWidth("alcohol");
-calcSubtotalWidth("textbooks");
-
-
-calcCatWidth("catbarfood","catFood");
-calcCatWidth("catbarcoffee","catCoffee");
-calcCatWidth("catbarclothes","catClothes");
-calcCatWidth("catbaralcohol","catAlcohol");
-calcCatWidth("catbartextbook","catTextbook");
+dropdown.onclick = () => {
+	console.log("clicked!");
+	const categories = document.getElementById("categories");
+	categories.style.display = "inline-block";
+};
