@@ -212,7 +212,7 @@ html {
 	box-shadow: 0 1px 1px 1px lightgrey;
 }
 
-#catmainbar {
+.catmainbar {
 	background: white;
 	width: 80%;
 	height: 50px;
