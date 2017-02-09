@@ -8,28 +8,46 @@
 
 	<body>
 		<div id="header">
-			<div id="logo"> 
-			<img id="logo_img" src = "logo.png"> </img>
+			<div id="logo">
+				<img id="logo_img" src="./logo.png" alt="">
 			</div>
 			<div id="settings">
-				<img id="settings_img" src="settings.png"> </img>
+				<img id="settings_img" src="./settings.png" alt="">
 			</div>
 			<div id="trends">
-				<img id="trends_img" src = "graph.png"></img>
+				<img id="trends_img" src="./graph.png" alt="">
 			</div>
 		</div>
 		
 		<div id="totalbox">
-			<div id="description">So far this month</div>
+			<div id="description">So far this 
+				<select id="styled_select">
+					<option value="month">month:</option>
+					<option value="week">week:</option>
+				</select>
+			</div>
+			<div class="edit">Edit</div>
 			<div id="spending">$748.63/$1000.00</div>
 			<div id="totalbar" value="1000.00">
-				<div class="subtotal" id="food" value="280.20"></div>
-				<div class="subtotal" id="coffee" value="44.16"></div>
-				<div class="subtotal" id="clothes" value="119.12"></div>
-				<div class="subtotal" id="alcohol" value="60.93"></div>
-				<div class="subtotal" id="textbooks" value="244.22"></div>
+				<div class="subtotal" id="food" value="280.20">
+					<span class="popup">asdfsadfsafa<!-- --></span>
+				</div>
+				<div class="subtotal" id="coffee" value="44.16">
+					<span class="popup">qqqqqqqqqqqqq<!-- --></span>
+				</div>
+				<div class="subtotal" id="clothes" value="119.12">
+					<span class="popup">wwwwwww<!-- --></span>
+				</div>
+				<div class="subtotal" id="alcohol" value="60.93">
+					<span class="popup">eeeeeee<!-- --></span>
+				</div>
+				<div class="subtotal" id="textbooks" value="244.22">
+					<span class="popup">ppppppp<!-- --></span>
+				</div>
 			</div>
-			<div id="dropdownbutton"></div>
+			<div id="dropdownbutton">
+				<img id="dropdownarrow" src="./dropdown.png" alt="">
+			</div>
 		</div>
 		
 		<div id="categories">
