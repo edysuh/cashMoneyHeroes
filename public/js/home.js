@@ -31,3 +31,4 @@ dropdown.onclick = () => {
 	const categories = document.getElementById("categories");
 	categories.style.display = "inline-block";
 };
+
