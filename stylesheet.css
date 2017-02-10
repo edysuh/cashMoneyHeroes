@@ -254,6 +254,7 @@ html {
 	margin-right: 5%;
 }
 
+
 #footnote {
 	text-align: center;
 	padding-top: 100px;
@@ -270,3 +271,12 @@ html {
 	
 }
 
+=======
+.detail{
+	width: 98%;
+	height: 150px;
+	margin: auto;
+	margin-top: 2%;
+	background: white;
+}
+>>>>>>> 723bc41952553db399299c754a0a6c0c2f677037

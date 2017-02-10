@@ -1,4 +1,10 @@
 const dropdown = document.getElementById("dropdownbutton");
+const dropfood = document.getElementById("foodarr");
+const dropcoffee = document.getElementById("coffeearr");
+const dropclothes = document.getElementById("clothesarr");
+const dropalcohol = document.getElementById("alcoholarr");
+const droptext = document.getElementById("textarr");
+
 var dropdown_flag = false;
 console.log('dropdown', dropdown);
 
@@ -42,3 +48,6 @@ dropdown.onclick = () => {
 		dropdown.style.transform = "rotate(0deg)";
 	}
 };
+
+
+
