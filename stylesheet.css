@@ -284,3 +284,11 @@ html {
 	margin-bottom: 2px;
 	margin-right: 5%;
 }
+
+.detail{
+	width: 98%;
+	height: 150px;
+	margin: auto;
+	margin-top: 2%;
+	background: white;
+}
