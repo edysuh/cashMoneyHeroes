@@ -6,7 +6,7 @@ html {
 }
 
 #background {
-	background: #a36e35;
+	background: #B0E9D2;
 	width: 100%;
 	height: 500px;
 	position: absolute;
@@ -15,6 +15,7 @@ html {
 	right: 0px;
 	z-index: -1;
 	box-shadow: 0 5px 10px 2px lightgrey;
+	opacity: 30%;
 }
 
 #header {
