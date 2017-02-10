@@ -1,5 +1,4 @@
 const dropdown = document.getElementById("dropdownbutton");
-console.log('dropdown', dropdown);
 
 function calcSpendingBarWidth(category, total) {
 	const total_bar = document.getElementById(total);

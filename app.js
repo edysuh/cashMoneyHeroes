@@ -22,6 +22,19 @@ var food = new Category({
 });
 console.log('food', food);
 
+Category.find({ name: 'food'}, function(err, cat) {
+	if (err) throw err;
+	
+	food.setBudget(500);
+	food.save((err) => {
+		if (err) throw err;
+		console.log("save!");
+	});
+	console.log(cat);
+});
+
+console.log('food', food);
+
 // ---- testing end ----
 
 app.listen(9000, () => {

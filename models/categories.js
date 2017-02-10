@@ -10,11 +10,12 @@ var categorySchema = new Schema({
 
 categorySchema.methods.setName = (nname) => {
 	this.name = nname;
-	// return this.name;
+	return this.name;
 };
 
 categorySchema.methods.setBudget = (nbudget) => {
 	this.budget = nbudget;
+	return this.budget;
 };
 
 categorySchema.methods.setSpent = (nspent) => {
