@@ -257,21 +257,20 @@ html {
 
 #footnote {
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 300px;
 	font-size: 10pt;
 	color: grey;
 }
 
 #footnote a{
 	text-decoration: none;
-	font-size: 13pt;
+	font-size: 12pt;
 	color: grey;
 	font-family: sans-serif;
 	text-decoration: none;
 	
 }
 
-=======
 .detail{
 	width: 98%;
 	height: 150px;
@@ -279,4 +278,4 @@ html {
 	margin-top: 2%;
 	background: white;
 }
->>>>>>> 723bc41952553db399299c754a0a6c0c2f677037
+
