@@ -6,7 +6,18 @@ html {
 }
 
 #background {
-	background-color: #D3FAE5;
+	/* background-color: #65B891; */
+	background-color: #629677;
+	/* background-color: #94A89A; */
+	/* background-color: #DDF8E8; */
+	/* background-color: #DBF4AD; */
+	/* background-color: #52D1DC; */
+	/* background-color: #FCF6B1; */
+	/* background-color: #E6EFE9; */
+	/* background-color: #61E294; */
+	/* background-color: #9FA2B2; */
+	/* background-color: #58A4B0; */
+	/* background-color: #8D94BA; */
 	width: 100%;
 	height: 500px;
 	position: absolute;
@@ -46,7 +57,7 @@ html {
 
 #navigation_bar ul li a{
 	text-decoration: none;
-	color:grey;
+	color: lightgrey;
 }
 
 #navigation_bar ul li{
@@ -64,7 +75,7 @@ html {
 
 
 #total_budget_box {
-	width: 98%;
+	width: 90%;
 	height: 600px;
 	margin-top: 2%;
 	margin: auto;
@@ -196,7 +207,7 @@ html {
 }
 
 .category {
-	width: 98%;
+	width: 90%;
 	height: 150px;
 	margin: auto;
 	margin-top: 2%;
@@ -254,6 +265,10 @@ html {
 	margin-right: 5%;
 }
 
+.catdropdownarrow:hover {
+	cursor: pointer;
+}
+
 
 #footnote {
 	text-align: center;
@@ -262,7 +277,7 @@ html {
 	color: grey;
 }
 
-#footnote a{
+#footnote a {
 	text-decoration: none;
 	font-size: 12pt;
 	color: grey;
@@ -271,11 +286,13 @@ html {
 	
 }
 
-.detail{
-	width: 98%;
+.detail {
+	display: none;
+	width: 90%;
 	height: 150px;
 	margin: auto;
-	margin-top: 2%;
+	margin-top: .5%;
 	background: white;
+	box-shadow: 0 5px 10px 2px lightgrey, 0 5px 10px 2px lightgrey;
 }
 
