@@ -1,20 +1,36 @@
 const dropdown = document.getElementById("dropdownbutton");
-var dropdown_flag = false;
-console.log('dropdown', dropdown);
+
+const categories = document.getElementById("categories");
+categories.style.display = "none";
+
+const all_hidden_els = document.getElementsByClassName("detail");
+const category_dropdown = document.querySelectorAll(".catdropdownarrow");
 
 function calcSpendingBarWidth(category, total) {
 	const total_bar = document.getElementById(total);
 	const spent_category = document.getElementById(category);
 	var total_value = total_bar.getAttribute("value");
 	var spent_value = spent_category.getAttribute("value");
+	
 	var ratio = spent_value / total_value;
 	
-	if (ratio < 1) {
-		spent_category.style.width = ratio * 100 + '%';
-	} else {
-		spent_category.style.width = '100%';
-	}
+	spent_category.style.width = (ratio < 1) ? ratio * 100 + "%" : "100%";
 }
+
+function toggleDropDown(el) {
+	el.style.display = (el.style.display === "none") ? "block" : "none";
+}
+
+dropdown.onclick = () => { toggleDropDown(categories); };
+
+category_dropdown.forEach(category_arrow => {
+	var category = category_arrow.getAttribute('id').split("_")[0];
+	var cat_details = document.getElementById(category + "_detail");
+	cat_details.style.display = "none";
+	console.log('cat_details', cat_details);
+	
+	category_arrow.onclick = () => { toggleDropDown(cat_details); };
+});
 
 calcSpendingBarWidth("food", "totalbar");
 calcSpendingBarWidth("coffee", "totalbar");
@@ -27,19 +43,3 @@ calcSpendingBarWidth("catbarcoffee","catCoffee");
 calcSpendingBarWidth("catbarclothes","catClothes");
 calcSpendingBarWidth("catbaralcohol","catAlcohol");
 calcSpendingBarWidth("catbartextbook","catTextbook");
-
-dropdown.onclick = () => {
-	const categories = document.getElementById("categories");
-
-	if (!dropdown_flag) {
-		categories.style.display = "inline-block";
-		dropdown_flag = true;
-		dropdown.style.transform = "rotate(180deg)";
-		categories.scrollIntoView();
-	} else {
-		categories.style.display = "none";
-		dropdown_flag = false;
-		dropdown.style.transform = "rotate(0deg)";
-	}
-};
-
