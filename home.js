@@ -18,7 +18,7 @@ function calcSpendingBarWidth(category, total) {
 }
 
 function toggleDropDown(el) {
-	el.style.display = (el.style.display === "none") ? "inline-block" : "none";
+	el.style.display = (el.style.display === "none") ? "block" : "none";
 }
 
 dropdown.onclick = () => { toggleDropDown(categories); };
@@ -27,6 +27,7 @@ category_dropdown.forEach(category_arrow => {
 	var category = category_arrow.getAttribute('id').split("_")[0];
 	var cat_details = document.getElementById(category + "_detail");
 	cat_details.style.display = "none";
+	console.log('cat_details', cat_details);
 	
 	category_arrow.onclick = () => { toggleDropDown(cat_details); };
 });
