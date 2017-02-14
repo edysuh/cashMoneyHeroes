@@ -1,10 +1,10 @@
-const dropdown = document.getElementById("dropdownbutton");
+const dropdown = document.getElementById("total_dropdown");
 
 const categories = document.getElementById("categories");
 categories.style.display = "none";
 
 const all_hidden_els = document.getElementsByClassName("detail");
-const category_dropdown = document.querySelectorAll(".catdropdownarrow");
+const category_dropdown = document.querySelectorAll(".cat_dropdown");
 
 function calcSpendingBarWidth(category, total) {
 	const total_bar = document.getElementById(total);
@@ -24,6 +24,7 @@ function toggleDropDown(el) {
 dropdown.onclick = () => { toggleDropDown(categories); };
 
 category_dropdown.forEach(category_arrow => {
+	console.log('category_arrow', category_arrow);
 	var category = category_arrow.getAttribute('id').split("_")[0];
 	var cat_details = document.getElementById(category + "_detail");
 	cat_details.style.display = "none";
