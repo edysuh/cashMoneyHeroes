@@ -1,6 +1,6 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { match, RoutingContext } from 'react-router';
+import { match, RouterContext } from 'react-router';
 import { routes } from './routes/routes';
 
 const express = require('express'),
@@ -15,22 +15,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 
 app.get('/html', (req, res) => {
-	res.sendFile(__dirname + "/views/home.html");
+	res.sendFile(__dirname + "/views/index.html");
 });
 
 app.get('*', (req, res) => {
 	match({ routes, location: req.url}, (err, redirectLocation, props) => {
 		if (err) {
 			res.status(500).send(err.message);
-		} else if (redirectLocation) {
+		} 
+		else if (redirectLocation) {
 			res.redirect(302, redirectLocation.pathname + redirectLocation.search);
-		} else if (props) {
-			const markup = renderToString(<RoutingContext {...props} />);
+		} 
+		else if (props) {
+			const markup = renderToString(<RouterContext {...props} />);
 			console.log('markup', markup);
-			res.render('index.html', {markup});
-			// res.render('index');
-			// res.sendFile(__dirname + "/views/index.html");
-		} else {
+			res.render('index', {markup});
+		} 
+		else {
 			res.sendStatus(404);
 		}
 	});
