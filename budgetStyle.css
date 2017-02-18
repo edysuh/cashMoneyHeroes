@@ -1,0 +1,119 @@
+html {
+	font-family:  "Avenir"; !important;
+	font-size: 32px;
+	/* background: AliceBlue; */
+	background: WhiteSmoke;
+}
+
+#background {
+	background-color: #629677;
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: -1;
+	box-shadow: 0 1px 1px 0 lightgrey;
+}
+
+#header {
+	width: 100%;
+	height: 200px;
+}
+
+#logo {
+	float: left;
+	width: 50%;
+	height: 100px;
+}
+
+#logo_img {
+	max-width: 100%;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+#navigation_bar ul{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height:50px;
+	display:block;
+}
+
+#navigation_bar ul li a{
+	text-decoration: none;
+	color: lightgrey;
+}
+
+#navigation_bar ul li{
+	float: right;
+	width:7%;
+	height:40px;
+	font-family: sans-serif;
+	line-height:40px;
+	font-size: 15px ;
+	text-align: center;
+	background-color: none;
+	list-style: none;
+
+}
+/* the above is the same as index page. */
+
+#budgetbox{
+	width: 50%;
+	height: 600px;
+	float: center;
+	margin:auto;
+	background: lightgray;
+	box-shadow: 0 1px 1px 0 lightgrey, 0 1px 1px 0 lightgrey;
+}
+
+#budget_list{
+	text-align:center;
+	font-size:30px;
+	margin: auto;
+	padding: 20px;
+}
+
+#budget_period{
+	text-align:center;
+	margin: auto;
+	padding: 10px;
+}
+
+#bottom_buttons{
+	text-align:center;
+	margin: auto;
+	padding: 20px;
+}
+
+#budget_title{
+	font-size: 40px;
+	padding:10%;
+	text-align:center;
+	color: darkblue;
+	
+}
+
+.topbutton{
+border: 2px solid #629677;
+width: 100px;
+height: 50px;	
+font-size:20px;
+}
+
+.botbutton{
+	border: 2px solid #629677;
+	width: 100px;
+	height: 40px;
+	font-size: 15px;	
+}
+
+.botbuttonl{
+	border: 2px solid #629677;
+	width: 200px;
+	height: 40px;
+	font-size: 15px;	
+}
