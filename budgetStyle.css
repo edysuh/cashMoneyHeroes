@@ -66,7 +66,7 @@ html {
 	height: 600px;
 	float: center;
 	margin:auto;
-	background: lightgray;
+	background: white;
 	box-shadow: 0 1px 1px 0 lightgrey, 0 1px 1px 0 lightgrey;
 }
 
@@ -91,10 +91,9 @@ html {
 
 #budget_title{
 	font-size: 40px;
-	padding:10%;
+	padding: 5%;
 	text-align:center;
-	color: darkblue;
-	
+	color: green;
 }
 
 .topbutton{
@@ -109,6 +108,7 @@ font-size:20px;
 	width: 100px;
 	height: 40px;
 	font-size: 15px;	
+	float: right;
 }
 
 .botbuttonl{
@@ -116,4 +116,54 @@ font-size:20px;
 	width: 200px;
 	height: 40px;
 	font-size: 15px;	
+	float: left;
 }
+
+.cat_name {
+	float: left;
+}
+
+.cat_input {
+	float: right;
+}
+
+#add_cat {
+	float: left;
+}
+
+#add_val {
+	float: right;
+}
+
+.input_box {
+	width: 200px;
+	font-size: 24px;
+}
+
+.col_box {
+	float: left;
+	width: 35px;
+	height: 35px;
+	border: 1px solid lightgrey;
+}
+
+.food_color {
+	background-color: #B5D6B2;
+}
+
+.coffee_color {
+	background-color: #C3B59F;
+}
+
+.clothes_color {
+	background-color: #D6A2AD;
+}
+
+.alcohol_color {
+	background-color: #F4E8C1;
+}
+
+.textbooks_color {
+	background-color: #80A1D4;
+}
+
