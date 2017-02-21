@@ -1,9 +1,14 @@
 {
   "name": "reserve",
   "version": "1.0.0",
+	"engines": {
+		"node": "7.5.0",
+		"npm": "4.2.0"
+	},
   "description": "money budgeting for college students",
   "main": "server.js",
   "scripts": {
+		"start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +22,7 @@
   },
   "homepage": "https://github.com/edysuh/cashMoneyHeroes#readme",
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0"
   }
 }

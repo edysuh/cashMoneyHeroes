@@ -3,16 +3,39 @@ var express = require('express'),
 	path = require('path'),
 	fs = require('fs'),
 	filename = './data/data.json',
-	data = require(filename);
+	data = require(filename),
+	exphbs = require('express-handlebars');
+
+app.set('port', (process.env.PORT || 9000));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.engine('handlebars', exphbs({extname: 'handlebars', defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, 'public/html/index.html'));
+	res.render('index');
 });
 
+app.get('/html/budget', (req, res) => {
+
+});
+
+
+
+
+
+// start the app ----
+
+app.listen(app.get('port'), () => {
+	console.log('-------- listening on port', app.get('port'), 'for requests to re:server --------');
+});
+
+
+// helper functions ----
+
 function modifyBudget(category, val) {
-	data.categories[category].budget = val;
+	data[category].budget = val;
 	console.log('data', data);
 
 	fs.writeFile(filename, JSON.stringify(data, null, 2), (err) => {
@@ -20,8 +43,7 @@ function modifyBudget(category, val) {
 	});
 }
 
+
+
 modifyBudget("food", 450);
 
-app.listen(9000, () => {
-	console.log('-------- listening on port 9000 for requests to re:server --------');
-});
