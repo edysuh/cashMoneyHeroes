@@ -36,35 +36,36 @@
 			
 <!-- categories under this form can be collectively modified -->
 			<div id ="input_budget">
-				<form id="budget_list">
+				<form id="budget_list" action="/budget" method="post">
 					<div class="col_box food_color"></div>
 					<div class="cat_name"> Food:</div>
-					<input class="cat_input input_box" type="number" value={{categories.food.budget}}><br>
+					<input class="cat_input input_box" type="number" name="food_budget" value={{categories.food.budget}}><br>
 					
 					<div class="col_box coffee_color"></div>
 					<div class="cat_name"> Coffee:</div>
-					<input class="cat_input input_box" type="number" value={{categories.coffee.budget}}><br>
+					<input class="cat_input input_box" type="number" name="coffee_budget" value={{categories.coffee.budget}}><br>
 					
 					<div class="col_box clothes_color"></div>
 					<div class="cat_name"> Clothes:</div>
-					<input class="cat_input input_box" type="number" value={{categories.clothes.budget}}><br>
+					<input class="cat_input input_box" type="number" name="clothes_budget" value={{categories.clothes.budget}}><br>
 					
 					<div class="col_box alcohol_color"></div>
 					<div class="cat_name"> Alcohol:</div>
-					<input class="cat_input input_box" type="number" value={{categories.alcohol.budget}}><br>
+					<input class="cat_input input_box" type="number" name="alcohol_budget" value={{categories.alcohol.budget}}><br>
 					
 					<div class="col_box textbooks_color"></div>
 					<div class="cat_name"> Textbooks:</div>
-					<input class="cat_input input_box" type="number" value={{categories.textbooks.budget}}><br>
+					<input class="cat_input input_box" type="number" name="textbooks_budget" value={{categories.textbooks.budget}}><br>
 					
 					<div class="col_box"></div>
 					<div id="add_cat"><input class="input_box" type="text" placeholder="Add Category">:</div>
 					<input class="input_box" id="add_val" type="text" placeholder="not implemented yet"><br>
+					
+					<div id="bottom_buttons">
+						<button class="botbuttonl" id="add_cat">Add Category</button>
+						<button class="botbutton" id="save" type="submit">Save</button>
+					</div>
 				</form>
-			</div>
-			<div id="bottom_buttons">
-				<button class="botbuttonl" type="button" id="add_cat" onclick="myFunction()">Add Category</button>
-				<input class="botbutton" type="button" id="save" value="save">
 			</div>
 		</div>
 	</body>
