@@ -54,14 +54,11 @@ app.post('/budget', (req, res) => {
 	res.render('budget', data);
 });
 
-
-
 // start the app ----
 
 app.listen(app.get('port'), () => {
 	console.log('-------- listening on port', app.get('port'), 'for requests to re:server --------');
 });
-
 
 // helper functions ----
 
