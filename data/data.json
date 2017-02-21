@@ -1,0 +1,24 @@
+{
+  "categories": {
+    "food": {
+      "budget": 10,
+      "spent": 0
+    },
+    "coffee": {
+      "budget": 0,
+      "spent": 0
+    },
+    "clothes": {
+      "budget": 0,
+      "spent": 0
+    },
+    "alcohol": {
+      "budget": 0,
+      "spent": 0
+    },
+    "textbooks": {
+      "budget": 0,
+      "spent": 0
+    }
+  }
+}
