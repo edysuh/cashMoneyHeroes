@@ -3,6 +3,6 @@ function check(form) {
 		window.open('./index.html', '_self');
 	}
 	else {
-		alert("The username and password you entered don't match");
+		alert("Invalid Username/Password");
 	}
 }
