@@ -1,14 +1,15 @@
 {
   "name": "reserve",
   "version": "1.0.0",
-	"engines": {
-		"node": "7.5.0",
-		"npm": "4.2.0"
-	},
+  "engines": {
+    "node": "7.5.0",
+    "npm": "4.2.0"
+  },
   "description": "money budgeting for college students",
   "main": "server.js",
   "scripts": {
-		"start": "node server.js",
+    "start": "node server.js",
+    "nodemon": "./node_modules/.bin/nodemon --ignore 'data/data.json' server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +25,8 @@
   "dependencies": {
     "express": "^4.14.1",
     "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }

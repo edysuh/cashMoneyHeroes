@@ -19,7 +19,7 @@
 				<li><a href="#"> Settings </a></li>
 				<li><a href="#"> Account </a></li>
 				<li><a href="#"> Trends </a></li>
-				<li><a href="./html/budget.html"> Budget </a></li>
+				<li><a href="/budget"> Budget </a></li>
 			</ul>
 			</div>
 		</div>
@@ -33,27 +33,27 @@
 					</select>:
 				</div>
 				
-				<div id="spending">$748.63/$1000.00</div>
+				<div id="spending">${{total.spent}}/${{total.budget}}</div>
 				
 				<div id="totalbar" value="1000.00">
 					<div class="subtotal food_color" id="food" value="280.20">
-						<span class="popup">food: $280.20</span>
+						<span class="popup">food: ${{categories.food.spent}}</span>
 					</div>
 					
 					<div class="subtotal coffee_color" id="coffee" value="44.16">
-						<span class="popup">coffee: $44.16</span>
+						<span class="popup">coffee: ${{categories.coffee.spent}}</span>
 					</div>
 					
 					<div class="subtotal clothes_color" id="clothes" value="119.12">
-						<span class="popup">clothes: $119.12</span>
+						<span class="popup">clothes: ${{categories.clothes.spent}}</span>
 					</div>
 					
 					<div class="subtotal alcohol_color" id="alcohol" value="60.93">
-						<span class="popup">alcohol: $60.93</span>
+						<span class="popup">alcohol: ${{categories.alcohol.spent}}</span>
 					</div>
 					
 					<div class="subtotal textbooks_color" id="textbooks" value="244.22">
-						<span class="popup">textbooks: $244.22</span>
+						<span class="popup">textbooks: ${{categories.textbooks.spent}}</span>
 					</div>
 				</div>
 			</div>
@@ -62,10 +62,10 @@
 		</div>
 		
 		<div id="categories">
-			<div class="category" id= "catFood" value="400.00">
+			<div class="category" id="catFood" value="400.00">
 				<div class="cat_top">
 					<div class="catname">Food</div>
-					<div class="catspend">$280.20/$400</div>
+					<div class="catspend"><span>${{categories.food.spent}}</span>/${{categories.food.budget}}</div>
 					<div class="catmainbar">
 						<div class="cattotal food_color" id="catbarfood" value="280.20"></div>
 					</div>
@@ -93,10 +93,10 @@
 				</div>
 			</div>
 
-			<div class="category" id= "catCoffee" value="100.00">
+			<div class="category" id="catCoffee" value="100.00">
 				<div class="cat_top">
 					<div class="catname">Coffee</div>
-					<div class="catspend">$60.93/$100</div>
+					<div class="catspend"><span>${{categories.coffee.spent}}</span>/${{categories.coffee.budget}}</div>
 					<div class="catmainbar">
 						<div class="cattotal coffee_color" id="catbarcoffee" value= "60.93"></div>
 					</div>
@@ -124,10 +124,10 @@
 				</div>
 			</div>
 
-			<div class="category" id= "catClothes" value="150.00">
+			<div class="category" id="catClothes" value="150.00">
 				<div class="cat_top">
 					<div class="catname">Clothes</div>
-					<div class="catspend">$44.16/$150</div>
+					<div class="catspend"><span>${{categories.clothes.spent}}</span>/${{categories.clothes.budget}}</div>
 					<div class="catmainbar">			
 						<div class="cattotal clothes_color" id="catbarclothes" value= "44.16"></div>
 					</div>
@@ -155,10 +155,10 @@
 				</div>
 			</div>
 
-			<div class="category" id= "catAlcohol" value="150.00">
+			<div class="category" id="catAlcohol" value="150.00">
 				<div class="cat_top">
 					<div class="catname">Alcohol</div>
-					<div class="catspend">$119.12/$150</div>
+					<div class="catspend"><span>${{categories.alcohol.spent}}</span>/${{categories.alcohol.budget}}</div>
 					<div class="catmainbar">
 						<div class="cattotal alcohol_color" id="catbaralcohol" value= "119.12"></div>
 					</div>
@@ -186,10 +186,10 @@
 				</div>
 			</div>
 
-			<div class="category" id= "catTextbook" value="200.00">
+			<div class="category" id="catTextbook" value="200.00">
 				<div class="cat_top">
-					<div class="catname">Textbook</div>
-					<div class="catspend"><span style="color: red">$244.22</span>/$200</div>
+					<div class="catname">Textbooks</div>
+					<div class="catspend"><span style="color: red">${{categories.textbooks.spent}}</span>/${{categories.textbooks.budget}}</div>
 					<div class="catmainbar">
 						<div class="cattotal textbooks_color" id="catbartextbook" value= "244.22"></div>
 					</div>

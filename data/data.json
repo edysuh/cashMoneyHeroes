@@ -1,22 +1,32 @@
 {
-  "food": {
-    "budget": 450,
-    "spent": 0
+  "total": {
+    "budget": 1000,
+    "spent": 748.63
   },
-  "coffee": {
-    "budget": 0,
-    "spent": 0
-  },
-  "clothes": {
-    "budget": 0,
-    "spent": 0
-  },
-  "alcohol": {
-    "budget": 0,
-    "spent": 0
-  },
-  "textbooks": {
-    "budget": 0,
-    "spent": 0
+  "categories": {
+    "food": {
+      "budget": 400,
+      "spent": 280.2
+    },
+    "coffee": {
+      "budget": 100,
+      "spent": 60.93
+    },
+    "clothes": {
+      "budget": 150,
+      "spent": 44.16
+    },
+    "alcohol": {
+      "budget": 150,
+      "spent": 119.12
+    },
+    "textbooks": {
+      "budget": 200,
+      "spent": 244.22
+    },
+    "extra": {
+      "budget": 0,
+      "spent": 0
+    }
   }
 }
