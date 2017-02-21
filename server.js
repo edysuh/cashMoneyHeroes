@@ -15,12 +15,12 @@ function modifyBudget(category, val) {
 	data.categories[category].budget = val;
 	console.log('data', data);
 
-	fs.writeFileSync(filename, JSON.stringify(data, null, 2), (err) => {
+	fs.writeFile(filename, JSON.stringify(data, null, 2), (err) => {
 		if (err) console.log(err);
 	});
 }
 
-modifyBudget("food", 10);
+modifyBudget("food", 450);
 
 app.listen(9000, () => {
 	console.log('-------- listening on port 9000 for requests to re:server --------');

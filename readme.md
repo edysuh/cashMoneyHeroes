@@ -9,8 +9,10 @@ cashMoneyHeroes is a money budgeting app for college students
 	`brew install mongodb`
 	**** WE CAN IGNORE STEP 3 FOR NOW ****
 4. in this directory, run `npm install`
-5. run `node app.js` to launch the app
+5. run `node server.js` or `npm start` to launch the app
 	- however, i recommend using `nodemon` to run the app; itll let to you refresh the app on save,
 		without having to restart the app everytime
 		- run `npm install nodemon`
-		- then use `./node_modules/.bin/nodemon app.js` instead to launch the app
+		- then use `./node_modules/.bin/nodemon server.js` instead to launch the app
+	**** ACTUALLY DONT DO THIS RIGHT NOW ITS BROKEN ****
+6. open the web app in your browser at localhost:9000
