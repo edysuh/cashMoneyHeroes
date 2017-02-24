@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // rendering views ----
 
 app.get('/', (req, res) => {
-	res.render('home', data);
+	res.render('landing', data);
 });
 
 app.get('/budget', (req, res) => {
