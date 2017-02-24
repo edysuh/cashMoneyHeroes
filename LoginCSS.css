@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Avenir";
+	background-image: url(http://www.unomaha.edu/college-of-business-administration/finance-banking-real-estate/_files/images/finance1.jpg);
+	background-size: cover;
+	-webkit-filter: blur(0px);
+
+}
+
+.login_wrap {
+	width: 30%;
+	height: 80%;
+	margin-top: 8%;
+	overflow: hidden;
+	margin-left:auto;
+	margin-right: auto;
+	padding: 20px;
+	background: white;
+	border-radius: 8px;
+	border: 1px solid silver;
+	opacity: 0.9;
+
+}
+
+.login_wrap h2 {
+	text-align: center;
+}
+.login_wrap input {
+	width: 350px;
+	height: 35px;
+	margin: auto;
+	display: block;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	border: 1px solid silver;
+	padding: 5px;
+}
+
+.login_wrap .login_btn {
+	padding: 5px;
+	width: 100px;
+	height: 40px;
+	background-color: lightgrey;
+	opacity: 0.7;
+	border-radius: 3px;
+	border: 0;
+	font-size: 18px;
+	margin: auto;
+	display: block;
+}
+
+.login_wrap .login_btn:hover{
+	background-color: grey;
+	opacity: 0.8;
+}
+
+#forgot {
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.login_wrap .forgot{
+	
+	text-decoration: none;
+	font-size: 12px;
+	color: grey;
+}
+
+.login_wrap .forgot:hover{
+	color: darkred;
+}

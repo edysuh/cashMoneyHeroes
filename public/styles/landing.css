@@ -1,0 +1,141 @@
+html, 
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family:"Avenir";
+}
+
+.wrap {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background: #120103;
+	color: #fff;
+	text-align: center; 
+}
+
+header {
+	background: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	width: 100%;
+}
+
+header label {
+	margin-right: 10px;
+	margin-top: 10px;
+	float: right;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 3em;
+	width: 5%;
+	border: 1px solid silver;
+	border-radius: 10px;
+	font-size: .8em;
+	font-weight: bold;
+	padding: 0px;
+}
+
+header label:hover {
+	background: #E5E4E4;
+	opacity: 0.5;
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 10;
+	padding: 8em 1em 0;
+	background-color: #120103;
+	background-position: 50% 50%;
+	background-size: cover; 
+	transition: left 0s .75s;
+}
+
+.slide_one {background-image: url(https://www.nasa.gov/sites/default/files/images/712129main_8247975848_88635d38a1_o.jpg);}
+.slide_two {background-image: url(http://www.unomaha.edu/college-of-business-administration/finance-banking-real-estate/_files/images/finance1.jpg);}
+
+
+[id^="slide"]:checked + .slide {
+	left: 0;
+	z-index: 100;
+	transition: left .65s ease-out;
+}
+
+
+
+/* LOGIN CSS */
+.login_wrap {
+	width: 20%;
+	height: 56%;
+	min-width: 450px;
+	min-height: 500px;
+	overflow: hidden;
+	margin-left:auto;
+	margin-right: auto;
+	margin-botom: auto;
+	background: white;
+	border-radius: 8px;
+	border: 1px solid silver;
+	opacity: 0.9;
+}
+
+.login_wrap h2 {
+	text-align: center;
+}
+.login_wrap input {
+	width: 80%;
+	height: 35px;
+	margin: auto;
+	display: block;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	border: 1px solid silver;
+	padding: 5px;
+}
+
+.login_wrap .login_btn {
+	padding: 5px;
+	width: 100px;
+	height: 40px;
+	background-color: lightgrey;
+	opacity: 0.7;
+	border-radius: 3px;
+	border: 0;
+	font-size: 18px;
+	margin: auto;
+	display: block;
+}
+
+.login_wrap .login_btn:hover{
+	background-color: grey;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#forgot {
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.login_wrap .forgot{
+	
+	text-decoration: none;
+	font-size: 12px;
+	color: grey;
+}
+
+.login_wrap .forgot:hover{
+	color: darkred;
+}
+
