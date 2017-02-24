@@ -8,5 +8,5 @@ $(function() {
 
 
 function disappear() {
-	document.getElementById("slide2_trigger").style.display="none"; 
+	document.getElementById("topright").style.display="none"; 
 }

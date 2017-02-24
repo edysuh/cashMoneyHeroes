@@ -1,7 +1,7 @@
 .fly-in-text {
     list-style: none;
     position: absolute;
-    left: 50%;
+    left: 48%;
     top: 35%;
     transform: translateX(-50%) translateY(-50%);
 }
@@ -12,7 +12,7 @@
     font-size: 1.7em;
     color: #fff;
     opacity: 1;
-    transition: all 2.5s ease;
+    transition: all 2.5s linear;
 }
 
 #last {

@@ -80,9 +80,9 @@ header label:hover {
 	min-width: 450px;
 	min-height: 500px;
 	overflow: hidden;
-	margin-left:auto;
+	margin-left: auto;
 	margin-right: auto;
-	margin-botom: auto;
+	margin-bottom: auto;
 	background: white;
 	border-radius: 8px;
 	border: 1px solid silver;
