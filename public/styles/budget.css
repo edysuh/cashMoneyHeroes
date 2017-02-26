@@ -5,10 +5,17 @@ html {
 	background: WhiteSmoke;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
 #background {
-	background-color: #629677;
+	background-color: white;
 	width: 100%;
-	height: 500px;
+	height: 750px;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -19,47 +26,51 @@ html {
 
 #header {
 	width: 100%;
-	height: 200px;
+	height: 100px;
+  background-color: #C6DACA;
+  margin-bottom: 25px; 
+  border-bottom: 1px solid #E6E8E3;
 }
 
 #logo {
 	float: left;
-	width: 50%;
-	height: 100px;
+	width: 25%;
+	height: 50px;
 }
 
 #logo_img {
-	max-width: 100%;
-	max-height: 200px;
+	max-width: 80%;
+	max-height: 160px;
 	overflow: hidden;
 }
 
 #navigation_bar ul{
 	margin: 0px;
-	padding: 0px;
-	width: 100%;
+	padding-top: 30px;
 	height:50px;
 	display:block;
 }
 
 #navigation_bar ul li a{
 	text-decoration: none;
-	color: lightgrey;
+  font-family: Avenir;
+  color: white;
+}
+
+#navigation_bar ul li a:hover{
+	text-decoration: underline;
 }
 
 #navigation_bar ul li{
 	float: right;
 	width:7%;
 	height:40px;
-	font-family: sans-serif;
 	line-height:40px;
 	font-size: 15px ;
 	text-align: center;
 	background-color: none;
 	list-style: none;
-
 }
-/* the above is the same as index page. */
 
 #budgetbox{
 	width: 50%;
@@ -67,7 +78,7 @@ html {
 	float: center;
 	margin:auto;
 	background: white;
-	box-shadow: 0 1px 1px 0 lightgrey, 0 1px 1px 0 lightgrey;
+	border-radius: 3px;
 }
 
 #budget_list{
@@ -83,17 +94,22 @@ html {
 	padding: 10px;
 }
 
-#bottom_buttons{
-	text-align:center;
-	margin: auto;
-	padding: 20px;
-}
-
 #budget_title{
-	font-size: 40px;
+	font-size: 26px;
 	padding: 5%;
 	text-align:center;
-	color: green;
+	color: black;
+}
+
+#styled_select {
+	/* background-color: #B5D6B2; */
+	background-color: #E7E7E7;
+  font-family: Avenir;
+	border: 3px black;
+	font-size: 23px;
+	height: 50px;
+	width: 110px;
+	/* width: 165px; */
 }
 
 .topbutton{
@@ -103,32 +119,28 @@ height: 50px;
 font-size:20px;
 }
 
-.botbutton{
-	border: 2px solid #629677;
-	width: 100px;
-	height: 40px;
-	font-size: 15px;	
-	float: right;
-}
-
-.botbuttonl{
-	border: 2px solid #629677;
-	width: 200px;
-	height: 40px;
-	font-size: 15px;	
-	float: left;
-}
-
 .cat_name {
 	float: left;
+	font-size: 16px;
 }
 
 .cat_input {
 	float: right;
 }
 
+input[type='text'] {
+	font-size: 16px;
+font-family: "Avenir";
+}
+
+input[type='number'] {
+	font-size: 14px;
+font-family: "Avenir";
+}
+
 #add_cat {
 	float: left;
+	margin-bottom: 10px;
 }
 
 #add_val {
@@ -136,19 +148,20 @@ font-size:20px;
 }
 
 .input_box {
-	width: 240px;
+	width: 180px;
 	font-size: 24px;
 }
 
 .col_box {
 	float: left;
-	width: 35px;
-	height: 35px;
+	width: 25px;
+	height: 25px;
 	border: 1px solid lightgrey;
+	margin-right: 6px;
 }
 
 .food_color {
-	background-color: #B5D6B2;
+	background-color: #FDF9B9;
 }
 
 .coffee_color {
@@ -160,7 +173,7 @@ font-size:20px;
 }
 
 .alcohol_color {
-	background-color: #F4E8C1;
+	background-color: #F2DAFC;
 }
 
 .textbooks_color {

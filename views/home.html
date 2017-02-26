@@ -10,9 +10,8 @@
 		<div id="background"></div>
 		<div id="header">
 			<div id="logo">
-				<a href="/home">
-				<img id="logo_img" src="./styles/images/r2.png" alt="">
-				</a>
+				<a href="/">
+				<img id="logo_img" src="./styles/images/logoyv.png" alt="">
 			</div>
 			<div id = "navigation_bar">
 			<ul>
@@ -27,33 +26,31 @@
 
 		<div id="total_budget_box">
 			<div id="total_top">
-				<div id="description">So far this 
-					<select id="styled_select">
-						<option value="month">month</option>
-						<option value="week">week</option>
-					</select>:
+				<div id="description"><p>
+				Welcome back, Jeff!</p>
+				<p>So far this month, you've spent:</p>
 				</div>
 				
-				<div id="spending">${{total.spent}}/${{total.budget}}</div>
+				<div id="spending">${{total.spent}} of ${{total.budget}}</div>
 				
-				<div id="totalbar" value="1000.00">
-					<div class="subtotal food_color" id="food" value="280.20">
+				<div id="totalbar" value={{total.budget}}>
+					<div class="subtotal food_color" id="food" value={{categories.food.spent}}>
 						<span class="popup">food: ${{categories.food.spent}}</span>
 					</div>
 					
-					<div class="subtotal coffee_color" id="coffee" value="44.16">
+					<div class="subtotal coffee_color" id="coffee" value={{categories.coffee.spent}}>
 						<span class="popup">coffee: ${{categories.coffee.spent}}</span>
 					</div>
 					
-					<div class="subtotal clothes_color" id="clothes" value="119.12">
+					<div class="subtotal clothes_color" id="clothes" value={{categories.clothes.spent}}>
 						<span class="popup">clothes: ${{categories.clothes.spent}}</span>
 					</div>
 					
-					<div class="subtotal alcohol_color" id="alcohol" value="60.93">
+					<div class="subtotal alcohol_color" id="alcohol" value={{categories.alcohol.spent}}>
 						<span class="popup">alcohol: ${{categories.alcohol.spent}}</span>
 					</div>
 					
-					<div class="subtotal textbooks_color" id="textbooks" value="244.22">
+					<div class="subtotal textbooks_color" id="textbooks" value={{categories.textbooks.spent}}>
 						<span class="popup">textbooks: ${{categories.textbooks.spent}}</span>
 					</div>
 
@@ -61,18 +58,19 @@
 					<!-- 	<span class="popup">others: ${{categories.others.spent}}</span> -->
 					<!-- </div> -->
 				</div>
-			</div>
+			
 			
 			<div id="total_dropdown">show more</div>
 		</div>
+		</div>
 		
 		<div id="categories">
-			<div class="category" id="catFood" value="400.00">
+			<div class="category" id="catFood" value= {{categories.food.budget}}>
 				<div class="cat_top">
 					<div class="catname">Food</div>
 					<div class="catspend"><span>${{categories.food.spent}}</span>/${{categories.food.budget}}</div>
 					<div class="catmainbar">
-						<div class="cattotal food_color" id="catbarfood" value="280.20"></div>
+						<div class="cattotal food_color" id="catbarfood" value={{categories.food.spent}}></div>
 					</div>
 				</div>
 				
@@ -98,12 +96,14 @@
 				</div>
 			</div>
 
-			<div class="category" id="catCoffee" value="100.00">
+			<div class="category" id="catCoffee" value={{categories.coffee.budget}}>
 				<div class="cat_top">
 					<div class="catname">Coffee</div>
 					<div class="catspend"><span>${{categories.coffee.spent}}</span>/${{categories.coffee.budget}}</div>
 					<div class="catmainbar">
-						<div class="cattotal coffee_color" id="catbarcoffee" value="60.93"></div>
+
+						<div class="cattotal coffee_color" id="catbarcoffee" value= {{categories.coffee.spent}}></div>
+
 					</div>
 				</div>
 				
@@ -129,12 +129,14 @@
 				</div>
 			</div>
 
-			<div class="category" id="catClothes" value="150.00">
+			<div class="category" id="catClothes" value={{categories.clothes.budget}}>
 				<div class="cat_top">
 					<div class="catname">Clothes</div>
 					<div class="catspend"><span>${{categories.clothes.spent}}</span>/${{categories.clothes.budget}}</div>
 					<div class="catmainbar">			
-						<div class="cattotal clothes_color" id="catbarclothes" value="44.16"></div>
+
+						<div class="cattotal clothes_color" id="catbarclothes" value= {{categories.clothes.spent}}></div>
+
 					</div>
 				</div>
 				
@@ -160,12 +162,14 @@
 				</div>
 			</div>
 
-			<div class="category" id="catAlcohol" value="150.00">
+			<div class="category" id="catAlcohol" value={{categories.alcohol.budget}}>
 				<div class="cat_top">
 					<div class="catname">Alcohol</div>
 					<div class="catspend"><span>${{categories.alcohol.spent}}</span>/${{categories.alcohol.budget}}</div>
 					<div class="catmainbar">
-						<div class="cattotal alcohol_color" id="catbaralcohol" value="119.12"></div>
+
+						<div class="cattotal alcohol_color" id="catbaralcohol" value= {{categories.alcohol.spent}}></div>
+
 					</div>
 				</div>
 				
@@ -191,12 +195,14 @@
 				</div>
 			</div>
 
-			<div class="category" id="catTextbook" value="200.00">
+			<div class="category" id="catTextbook" value={{categories.textbooks.budget}}>
 				<div class="cat_top">
 					<div class="catname">Textbooks</div>
 					<div class="catspend"><span style="color: red">${{categories.textbooks.spent}}</span>/${{categories.textbooks.budget}}</div>
 					<div class="catmainbar">
-						<div class="cattotal textbooks_color" id="catbartextbook" value="244.22"></div>
+
+						<div class="cattotal textbooks_color" id="catbartextbook" value= {{categories.textbooks.spent}}></div>
+
 					</div>
 				</div>
 				

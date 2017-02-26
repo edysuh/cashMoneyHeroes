@@ -10,9 +10,10 @@
 		<div id ="background"> </div>
 		<div id="header">
 			<div id="logo">
-				<a href="/home">
-				<img id="logo_img" src="../styles/images/r2.png" alt="">
-				</a>
+
+				<a href="/">
+				<img id="logo_img" src="../styles/images/logoyv.png" alt=""></a>
+
 			</div>
 			<div id="navigation_bar">
 			<ul>
@@ -27,13 +28,8 @@
 <!-- same as the index page -->
 
 		<div id="budgetbox">
-			<div id="budget_title">Set Your Budget</div>
+			<div id="budget_title">Set your monthly budget</div>
 <!--buttons can be categorized -->
-
-			<div id="budget_period">
-				<button class="topbutton" type="button" id="month_button">monthly</button>
-				<button class="topbutton" type="button" id="week_button">weekly</button>
-			</div>
 			
 <!-- categories under this form can be collectively modified -->
 			<div id ="input_budget">
@@ -63,9 +59,11 @@
 					<div class="cat_name"> Textbooks:</div>
 					<input class="cat_input input_box" type="number" name="textbooks_budget" step="10" value={{categories.textbooks.budget}}><br>
 
+
 					<div class="col_box"></div>
-					<div id="add_cat"><input class="input_box" type="text" name="new_cat_name" placeholder="Add Category Name">:</div>
-					<input class="input_box" id="add_val" type="number" name="new_cat_val" placeholder="Add Category Value"><br>
+					
+					<div id="add_cat"><input class="input_box" type="text" name="new_cat_name" placeholder="Add category name">:</div>
+					<input class="input_box" id="add_val" type="number" name="new_cat_val" placeholder="Add category value"><br>
 					
 					<div id="bottom_buttons">
 						<button class="botbutton" id="save" type="submit">Save</button>

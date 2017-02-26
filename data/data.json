@@ -1,15 +1,15 @@
 {
   "total": {
-    "budget": "3235.00",
+    "budget": "8000000.00",
     "spent": "748.63"
   },
   "categories": {
     "food": {
-      "budget": "400.00",
+      "budget": "350.00",
       "spent": "280.20"
     },
     "coffee": {
-      "budget": "100.00",
+      "budget": "129.00",
       "spent": "44.16"
     },
     "clothes": {
@@ -24,13 +24,13 @@
       "budget": "292.00",
       "spent": "244.22"
     },
-    "extra": {
-      "budget": "3235.00",
+    "other": {
+      "budget": "0",
       "spent": "0"
     },
-    "Cats": {
-      "budget": "1234.00",
-      "spent": 0
+    "extra": {
+      "budget": "2005.00",
+      "spent": "0"
     }
   },
   "_locals": {}
