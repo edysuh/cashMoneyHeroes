@@ -51,16 +51,34 @@ app.post('/budget', (req, res) => {
 	var total_budget = 0;
 	
 	for (var key in budget_data) {
-		var category = key.split("_")[0];
-		var category_budget = budget_data[key];
-		total_budget += parseInt(category_budget);
+		var html_name = key.split("_");
+		var category = html_name[0];
+		var type = html_name[1];
 		
-		modifyBudget(category, category_budget);
+		if (type == "budget") {
+			var category_budget = budget_data[key];
+			modifyBudget(category, category_budget);
+		}
+	}
+	
+	if (budget_data["new_cat_name"] && budget_data["new_cat_val"]) {
+		if (Object.keys(data.categories).length < 10) {
+			data.categories[budget_data["new_cat_name"]] = { 
+				"budget": makeStringMoney(budget_data["new_cat_val"]), 
+				"spent": 0 
+			};
+			
+			fs.writeFile(filename, JSON.stringify(data, null, 2), (err) => {
+				if (err) console.log(err);
+			});
+		} else {
+			res.send('<p>Cannot add more than 10 categories</p>');
+		}
 	}
 	
 	data.total.budget = makeStringMoney(String(total_budget));
 
-	res.render('budget', data);
+	res.redirect('home');
 });
 
 // start the app ----
