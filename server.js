@@ -48,9 +48,9 @@ app.post('/login', (req, res) => {
 
 app.post('/budget', (req, res) => {
 	var budget_data = req.body;
-
+	var oldValue= 0;
 	var total_budget = 0;
-	var actualtotal = budget_data["total"];
+	var actualtotal = parseInt(budget_data["total"]);
 	console.log('budget_data', budget_data);
 
 
@@ -63,10 +63,11 @@ app.post('/budget', (req, res) => {
 		if (type == "budget") {
 			var category_budget = budget_data[key];
 
-				 total_budget += parseInt(category_budget);
-			
+			total_budget += parseInt(category_budget);
+			oldValue += parseInt(data.categories[category].budget);
 			modifyBudget(category, category_budget);
 		}
+		
 	}
 	
 	if (budget_data["new_cat_name"] && budget_data["new_cat_val"]) {
@@ -84,7 +85,7 @@ app.post('/budget', (req, res) => {
 		}
 	}
 	
-	data.total.budget = makeStringMoney(String(actualtotal));
+	data.total.budget = makeStringMoney(String(actualtotal+total_budget-oldValue));
 
 	res.redirect('home');
 });
