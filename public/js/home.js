@@ -38,11 +38,11 @@ calcSpendingBarWidth("coffee", "totalbar");
 calcSpendingBarWidth("clothes", "totalbar");
 calcSpendingBarWidth("alcohol", "totalbar");
 calcSpendingBarWidth("textbooks", "totalbar");
- calcSpendingBarWidth("others", "totalbar");
+ // calcSpendingBarWidth("others", "totalbar");
 
 calcSpendingBarWidth("catbarfood","catFood");
 calcSpendingBarWidth("catbarcoffee","catCoffee");
 calcSpendingBarWidth("catbarclothes","catClothes");
 calcSpendingBarWidth("catbaralcohol","catAlcohol");
 calcSpendingBarWidth("catbartextbook","catTextbook");
- calcSpendingBarWidth("catbarother","catOther");
+ // calcSpendingBarWidth("catbarother","catOther");

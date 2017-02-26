@@ -48,8 +48,6 @@ app.post('/login', (req, res) => {
 
 app.post('/budget', (req, res) => {
 	var budget_data = req.body;
-	console.log('budget_data', budget_data);
-
 	
 	for (var key in budget_data) {
 		var html_name = key.split("_");
