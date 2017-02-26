@@ -19,7 +19,8 @@ body {
 
 #logo {
 	float: left;
-	height: 250px;
+	height: 300px;
+	margin-top: 12px;
 }
 header {
 	background: none;
@@ -38,16 +39,16 @@ header label {
 	cursor: pointer;
 	display: inline-block;
 	line-height: 3em;
-	width: 5%;
+	width: 7%;
 	border: 1px solid silver;
 	border-radius: 10px;
-	font-size: .8em;
+	font-size: 1.1em;
 	font-weight: bold;
 	padding: 0px;
 }
 
 header label:hover {
-	background: #E5E4E4;
+	background: #434C68;
 	opacity: 0.5;
 }
 

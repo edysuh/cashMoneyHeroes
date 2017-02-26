@@ -32,6 +32,7 @@ body {
   border-bottom: 1px solid #E6E8E3;
 }
 
+
 #logo {
 	float: left;
 	width: 25%;
@@ -53,9 +54,12 @@ body {
 
 #navigation_bar ul li a{
 	text-decoration: none;
-  font-family: Avenir;
   color: white;
 }
+
+#navigation_bar ul li a:hover{
+	text-decoration: underline;
+}}
 
 #navigation_bar ul li{
 	float: right;
