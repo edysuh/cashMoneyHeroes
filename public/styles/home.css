@@ -33,6 +33,7 @@ html {
 	height: 200px;
 }
 
+
 #logo {
 	float: left;
 	width: 50%;
@@ -55,7 +56,11 @@ html {
 
 #navigation_bar ul li a{
 	text-decoration: none;
-	color: lightgrey;
+	color: #fff;
+}
+
+#navigation_bar ul li a:hover{
+	text-decoration: underline;
 }
 
 #navigation_bar ul li{
