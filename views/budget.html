@@ -20,6 +20,7 @@
 				<li><a href="#"> Account </a></li>
 				<li><a href="#"> Trends </a></li>
 				<li><a href="/budget"> Budget </a></li>
+				<li><a href="/home"> Home </a></li>
 			</ul>
 			</div>
 		</div>
@@ -37,6 +38,11 @@
 <!-- categories under this form can be collectively modified -->
 			<div id ="input_budget">
 				<form id="budget_list" action="/budget" method="post">
+									
+					<div class="col_box others_color"></div>
+					<div class="cat_name"> Total:</div>
+					<input class="cat_input input_box" type="number" name="extra_budget" value={{total.budget}}><br>
+					
 					<div class="col_box food_color"></div>
 					<div class="cat_name"> Food:</div>
 					<input class="cat_input input_box" type="number" name="food_budget" value={{categories.food.budget}}><br>
@@ -56,9 +62,6 @@
 					<div class="col_box textbooks_color"></div>
 					<div class="cat_name"> Textbooks:</div>
 					<input class="cat_input input_box" type="number" name="textbooks_budget" value={{categories.textbooks.budget}}><br>
-					<div class="col_box others_color"></div>
-					<div class="cat_name"> Others:</div>
-					<input class="cat_input input_box" type="number" name="other_budget" value={{categories.other.budget}}><br>
 
 					<div class="col_box"></div>
 					<div id="add_cat"><input class="input_box" type="text" name="new_cat_name" placeholder="Add Category Name">:</div>

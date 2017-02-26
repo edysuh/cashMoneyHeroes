@@ -48,7 +48,8 @@ app.post('/login', (req, res) => {
 
 app.post('/budget', (req, res) => {
 	var budget_data = req.body;
-	var total_budget = 0;
+	console.log('budget_data', budget_data);
+
 	
 	for (var key in budget_data) {
 		var html_name = key.split("_");
@@ -57,6 +58,11 @@ app.post('/budget', (req, res) => {
 		
 		if (type == "budget") {
 			var category_budget = budget_data[key];
+			
+			if (parseInt(category_budget) > total_budget) {
+				var total_budget = parseInt(category_budget);
+			}
+			
 			modifyBudget(category, category_budget);
 		}
 	}
