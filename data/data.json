@@ -25,12 +25,8 @@
       "spent": "244.22"
     },
     "other": {
-      "budget": "0",
-      "spent": "0"
-    },
-    "extra": {
-      "budget": "0",
-      "spent": "0"
+      "budget": "0.00",
+      "spent": "0.00"
     }
   },
   "_locals": {}
