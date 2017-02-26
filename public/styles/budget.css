@@ -8,7 +8,7 @@ html {
 #background {
 	background-color: #629677;
 	width: 100%;
-	height: 500px;
+	height: 530px;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -67,7 +67,7 @@ html {
 	float: center;
 	margin:auto;
 	background: white;
-	box-shadow: 0 1px 1px 0 lightgrey, 0 1px 1px 0 lightgrey;
+	border-radius: 3px;
 }
 
 #budget_list{
@@ -90,10 +90,10 @@ html {
 }
 
 #budget_title{
-	font-size: 40px;
+	font-size: 30px;
 	padding: 5%;
 	text-align:center;
-	color: green;
+	color: black;
 }
 
 .topbutton{
@@ -107,28 +107,44 @@ font-size:20px;
 	border: 2px solid #629677;
 	width: 100px;
 	height: 40px;
-	font-size: 15px;	
+	font-size: 13px;
+	font-family: Avenir;
 	float: right;
+	padding-top: 1%;
 }
 
 .botbuttonl{
 	border: 2px solid #629677;
 	width: 200px;
 	height: 40px;
-	font-size: 15px;	
+	font-size: 13px;	
+	font-family: Avenir;
 	float: left;
+	padding-top: 1%;
 }
 
 .cat_name {
 	float: left;
+	font-size: 16px;
 }
 
 .cat_input {
 	float: right;
 }
 
+input[type='text'] {
+	font-size: 16px;
+font-family: "Avenir";
+}
+
+input[type='number'] {
+	font-size: 14px;
+font-family: "Avenir";
+}
+
 #add_cat {
 	float: left;
+	margin-bottom: 10px;
 }
 
 #add_val {
@@ -136,19 +152,20 @@ font-size:20px;
 }
 
 .input_box {
-	width: 240px;
+	width: 180px;
 	font-size: 24px;
 }
 
 .col_box {
 	float: left;
-	width: 35px;
-	height: 35px;
+	width: 25px;
+	height: 25px;
 	border: 1px solid lightgrey;
+	margin-right: 6px;
 }
 
 .food_color {
-	background-color: #B5D6B2;
+	background-color: #FDF9B9;
 }
 
 .coffee_color {
@@ -160,7 +177,7 @@ font-size:20px;
 }
 
 .alcohol_color {
-	background-color: #F4E8C1;
+	background-color: #F2DAFC;
 }
 
 .textbooks_color {
