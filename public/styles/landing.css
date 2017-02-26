@@ -17,6 +17,10 @@ body {
 	text-align: center; 
 }
 
+#logo {
+	float: left;
+	height: 250px;
+}
 header {
 	background: none;
 	position: absolute;

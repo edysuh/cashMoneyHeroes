@@ -31,11 +31,20 @@ app.get('/', (req, res) => {
 	res.render('landing', data);
 });
 
+app.get('/home', (req, res) => {
+	res.render('home', data);
+});
+
 app.get('/budget', (req, res) => {
 	res.render('budget', data);
 });
 
 // post requests ----
+
+app.post('/login', (req, res) => {
+	var login_form = req.body;
+	res.render('home', data);
+});
 
 app.post('/budget', (req, res) => {
 	var budget_data = req.body;
