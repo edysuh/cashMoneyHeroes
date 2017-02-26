@@ -36,7 +36,7 @@
 				
 				<div id="spending">${{total.spent}}/${{total.budget}}</div>
 				
-				<div id="totalbar" value="1000.00">
+				<div id="totalbar" value=total.spent>
 					<div class="subtotal food_color" id="food" value=categories.food.spent>
 						<span class="popup">food: ${{categories.food.spent}}</span>
 					</div>
@@ -67,7 +67,7 @@
 		</div>
 		
 		<div id="categories">
-			<div class="category" id="catFood" value="400.00">
+			<div class="category" id="catFood" value=categories.food.budget>
 				<div class="cat_top">
 					<div class="catname">Food</div>
 					<div class="catspend"><span>${{categories.food.spent}}</span>/${{categories.food.budget}}</div>
@@ -98,7 +98,7 @@
 				</div>
 			</div>
 
-			<div class="category" id="catCoffee" value="100.00">
+			<div class="category" id="catCoffee" value=categories.coffee.budget>
 				<div class="cat_top">
 					<div class="catname">Coffee</div>
 					<div class="catspend"><span>${{categories.coffee.spent}}</span>/${{categories.coffee.budget}}</div>
@@ -129,7 +129,7 @@
 				</div>
 			</div>
 
-			<div class="category" id="catClothes" value="150.00">
+			<div class="category" id="catClothes" value=categories.clothes.budget>
 				<div class="cat_top">
 					<div class="catname">Clothes</div>
 					<div class="catspend"><span>${{categories.clothes.spent}}</span>/${{categories.clothes.budget}}</div>
@@ -160,7 +160,7 @@
 				</div>
 			</div>
 
-			<div class="category" id="catAlcohol" value="150.00">
+			<div class="category" id="catAlcohol" value=categories.alcohol.budget>
 				<div class="cat_top">
 					<div class="catname">Alcohol</div>
 					<div class="catspend"><span>${{categories.alcohol.spent}}</span>/${{categories.alcohol.budget}}</div>
@@ -191,7 +191,7 @@
 				</div>
 			</div>
 
-			<div class="category" id="catTextbook" value="200.00">
+			<div class="category" id="catTextbook" value=categories.textbooks.budget>
 				<div class="cat_top">
 					<div class="catname">Textbooks</div>
 					<div class="catspend"><span style="color: red">${{categories.textbooks.spent}}</span>/${{categories.textbooks.budget}}</div>
