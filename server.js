@@ -48,7 +48,7 @@ app.post('/login', (req, res) => {
 
 app.post('/budget', (req, res) => {
 	var budget_data = req.body;
-
+	var total_budget = 0;
 	
 	for (var key in budget_data) {
 		var category = key.split("_")[0];
