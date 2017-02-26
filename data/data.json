@@ -25,12 +25,17 @@
       "spent": "244.22"
     },
     "other": {
+<<<<<<< HEAD
       "budget": "0",
       "spent": "0"
     },
     "extra": {
       "budget": "1000.00",
       "spent": "0"
+=======
+      "budget": "0.00",
+      "spent": "0.00"
+>>>>>>> origin/master
     }
   },
   "_locals": {}
