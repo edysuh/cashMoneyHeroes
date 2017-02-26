@@ -50,7 +50,7 @@ app.post('/budget', (req, res) => {
 	var budget_data = req.body;
 
 	var total_budget = 0;
-
+	var actualtotal = budget_data["total"];
 	console.log('budget_data', budget_data);
 
 
@@ -84,7 +84,7 @@ app.post('/budget', (req, res) => {
 		}
 	}
 	
-	data.total.budget = makeStringMoney(String(total_budget));
+	data.total.budget = makeStringMoney(String(actualtotal));
 
 	res.redirect('home');
 });
