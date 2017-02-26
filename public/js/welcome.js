@@ -8,4 +8,5 @@ $(function() {
 
 function disappear() {
 	document.getElementById("topright").style.display="none"; 
+	document.getElementById("logo").style.display="none";
 }
