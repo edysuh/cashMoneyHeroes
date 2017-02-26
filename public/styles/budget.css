@@ -57,6 +57,10 @@ body {
   color: white;
 }
 
+#navigation_bar ul li a:hover{
+	text-decoration: underline;
+}
+
 #navigation_bar ul li{
 	float: right;
 	width:7%;
