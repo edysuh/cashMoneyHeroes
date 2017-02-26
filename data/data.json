@@ -1,15 +1,15 @@
 {
   "total": {
-    "budget": "2000.00",
+    "budget": "2005.00",
     "spent": "748.63"
   },
   "categories": {
     "food": {
-      "budget": "400.00",
+      "budget": "350.00",
       "spent": "280.20"
     },
     "coffee": {
-      "budget": "126.00",
+      "budget": "129.00",
       "spent": "44.16"
     },
     "clothes": {

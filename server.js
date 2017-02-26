@@ -62,10 +62,8 @@ app.post('/budget', (req, res) => {
 		
 		if (type == "budget") {
 			var category_budget = budget_data[key];
-			
-			if (parseInt(category_budget) > total_budget) {
-				var total_budget = parseInt(category_budget);
-			}
+
+				 total_budget += parseInt(category_budget);
 			
 			modifyBudget(category, category_budget);
 		}
