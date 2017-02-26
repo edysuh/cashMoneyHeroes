@@ -24,23 +24,13 @@
       "budget": "292.00",
       "spent": "244.22"
     },
-<<<<<<< HEAD
     "other": {
       "budget": "0",
       "spent": "0"
     },
     "extra": {
-      "budget": "2000.00",
+      "budget": "2005.00",
       "spent": "0"
-=======
-    "extra": {
-      "budget": "3235.00",
-      "spent": "0"
-    },
-    "Cats": {
-      "budget": "1234.00",
-      "spent": 0
->>>>>>> origin/master
     }
   },
   "_locals": {}

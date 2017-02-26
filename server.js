@@ -48,12 +48,12 @@ app.post('/login', (req, res) => {
 
 app.post('/budget', (req, res) => {
 	var budget_data = req.body;
-<<<<<<< HEAD
+
 	var total_budget = 0;
-=======
+
 	console.log('budget_data', budget_data);
 
->>>>>>> origin/master
+
 	
 	for (var key in budget_data) {
 		var html_name = key.split("_");
