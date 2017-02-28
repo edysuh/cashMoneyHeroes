@@ -1,27 +1,27 @@
 {
   "total": {
-    "budget": "8000000.00",
+    "budget": "285.00",
     "spent": "748.63"
   },
   "categories": {
     "food": {
-      "budget": "350.00",
+      "budget": "214.00",
       "spent": "280.20"
     },
     "coffee": {
-      "budget": "129.00",
+      "budget": "44.00",
       "spent": "44.16"
     },
     "clothes": {
-      "budget": "150.00",
+      "budget": "500.00",
       "spent": "119.12"
     },
     "alcohol": {
-      "budget": "150.00",
+      "budget": "70.00",
       "spent": "60.93"
     },
     "textbooks": {
-      "budget": "292.00",
+      "budget": "150.00",
       "spent": "244.22"
     },
     "other": {

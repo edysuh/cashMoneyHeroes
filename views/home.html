@@ -11,11 +11,11 @@
 		<div id="header">
 			<div id="logo">
 				<a href="/home">
-				<img id="logo_img" src="./styles/images/logoyv.png" alt="">
+				<img id="logo_img" src="./styles/images/mainlogo.png" alt="">
 			</div>
 			<div id = "navigation_bar">
 			<ul>
-				<li><a href="#"> Logout </a></li>
+				<li><a href="/"> Logout </a></li>
 				<li><a href="#"> Settings </a></li>
 				<li><a href="#"> Account </a></li>
 				<li><a href="#"> Trends </a></li>
@@ -27,7 +27,7 @@
 		<div id="total_budget_box">
 			<div id="total_top">
 				<div id="description"><p>
-				Welcome back, Jeff!</p>
+				Welcome back, User!</p>
 				<p>So far this month, you've spent:</p>
 				</div>
 				
@@ -92,7 +92,7 @@
 				</div>
 				<div class="detail_item">
 					<div class="detail_description">Northwestern Dining: Norris</div>
-					<div class="detail_spent">$20.41</div>
+					<div class="detail_spent">$50.41</div>
 				</div>
 			</div>
 
@@ -198,7 +198,7 @@
 			<div class="category" id="catTextbook" value={{categories.textbooks.budget}}>
 				<div class="cat_top">
 					<div class="catname">Textbooks</div>
-					<div class="catspend"><span style="color: red">${{categories.textbooks.spent}}</span>/${{categories.textbooks.budget}}</div>
+					<div class="catspend"><span>${{categories.textbooks.spent}}</span>/${{categories.textbooks.budget}}</div>
 					<div class="catmainbar">
 
 						<div class="cattotal textbooks_color" id="catbartextbook" value= {{categories.textbooks.spent}}></div>
