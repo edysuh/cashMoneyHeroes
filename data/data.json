@@ -5,40 +5,28 @@
   },
   "categories": {
     "food": {
-      "budget": "350.00",
+      "budget": "214.00",
       "spent": "280.20"
     },
     "coffee": {
-      "budget": "129.00",
+      "budget": "44.00",
       "spent": "44.16"
     },
     "clothes": {
-      "budget": "150.00",
+      "budget": "500.00",
       "spent": "119.12"
     },
     "alcohol": {
-      "budget": "150.00",
+      "budget": "70.00",
       "spent": "60.93"
     },
     "textbooks": {
-      "budget": "252.00",
+      "budget": "150.00",
       "spent": "244.22"
-    },
-    "other": {
-      "budget": "0.00",
-      "spent": "0"
     },
     "extra": {
       "budget": "111.00",
       "spent": "0"
-    },
-    "ASD": {
-      "budget": "123.00",
-      "spent": 0
-    },
-    "NEW CATDOG": {
-      "budget": "333.00",
-      "spent": 0
     }
   },
   "_locals": {}
