@@ -53,21 +53,15 @@
 					<div class="subtotal textbooks_color" id="textbooks" value={{categories.textbooks.spent}}>
 						<span class="popup">textbooks: ${{categories.textbooks.spent}}</span>
 					</div>
-
-					<!-- <div class="subtotal others_color" id="others" value="0.0"> -->
-					<!-- 	<span class="popup">others: ${{categories.others.spent}}</span> -->
-					<!-- </div> -->
 				</div>
-			
-			
-			<div id="total_dropdown">show more</div>
-		</div>
+				
+				<div id="total_dropdown">show more</div>
+			</div>
 		</div>
 		
 		<div id="categories">
-			
 			{{#each categories}}
-				<div class="category" id="catFood" value={{this.budget}}>
+			<div class="category" id="cat_{{@key}}" value={{this.budget}}>
 					<div class="cat_top">
 						<div class="catname">{{@key}}</div>
 						<div class="catspend"><span>${{this.spent}}</span>/${{this.budget}}</div>
@@ -79,8 +73,7 @@
 					<div class="cat_dropdown" id="{{@key}}_dropdown">details</div>
 				</div>
 				
-<<<<<<< HEAD
-				<div class="detail" id="food_detail">
+				<div class="detail" id="{{@key}}_detail">
 					<div class="detail_item">
 						<div class="detail_description">Whole Foods</div>
 						<div class="detail_spent">$76.54</div>
@@ -97,215 +90,86 @@
 						<div class="detail_description">Northwestern Dining: Norris</div>
 						<div class="detail_spent">$20.41</div>
 					</div>
-=======
-				<div class="cat_dropdown" id="food_dropdown">details</div>
-			</div>
-
-			<div class="detail" id="food_detail">
-				<div class="detail_item">
-					<div class="detail_description">Whole Foods</div>
-					<div class="detail_spent">$76.54</div>
-				</div>
-				<div class="detail_item">
-					<div class="detail_description">Todoroki</div>
-					<div class="detail_spent">$90.32</div>
-				</div>
-				<div class="detail_item">
-					<div class="detail_description">Chipotle</div>
-					<div class="detail_spent">$11.12</div>
-				</div>
-				<div class="detail_item">
-					<div class="detail_description">Northwestern Dining: Norris</div>
-					<div class="detail_spent">$50.41</div>
->>>>>>> 092598596701f11db6378b7347400a45e606c231
 				</div>
 			{{/each}}
-
-			<!-- <div class="category" id="catFood" value= {{categories.food.budget}}> -->
-			<!-- 	<div class="cat_top"> -->
-			<!-- 		<div class="catname">Food</div> -->
-			<!-- 		<div class="catspend"><span>${{categories.food.spent}}</span>/${{categories.food.budget}}</div> -->
-			<!-- 		<div class="catmainbar"> -->
-			<!-- 			<div class="cattotal food_color" id="catbarfood" value={{categories.food.spent}}></div> -->
-			<!-- 		</div> -->
-			<!-- 	</div> -->
-				
-			<!-- 	<div class="cat_dropdown" id="food_dropdown">details</div> -->
-			<!-- </div> -->
-
-			<!-- <div class="detail" id="food_detail"> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Whole Foods</div> -->
-			<!-- 		<div class="detail_spent">$76.54</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Todoroki</div> -->
-			<!-- 		<div class="detail_spent">$90.32</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Chipotle</div> -->
-			<!-- 		<div class="detail_spent">$11.12</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Northwestern Dining: Norris</div> -->
-			<!-- 		<div class="detail_spent">$20.41</div> -->
-			<!-- 	</div> -->
-			<!-- </div> -->
-
-			<!-- <div class="category" id="catCoffee" value={{categories.coffee.budget}}> -->
-			<!-- 	<div class="cat_top"> -->
-			<!-- 		<div class="catname">Coffee</div> -->
-			<!-- 		<div class="catspend"><span>${{categories.coffee.spent}}</span>/${{categories.coffee.budget}}</div> -->
-			<!-- 		<div class="catmainbar"> -->
-
-			<!-- 			<div class="cattotal coffee_color" id="catbarcoffee" value= {{categories.coffee.spent}}></div> -->
-
-			<!-- 		</div> -->
-			<!-- 	</div> -->
-				
-			<!-- 	<div class="cat_dropdown" id="coffee_dropdown">details</div> -->
-			<!-- </div> -->
-
-			<!-- <div class="detail" id="coffee_detail"> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Northwestern Dining: Norris</div> -->
-			<!-- 		<div class="detail_spent">$5.64</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Starbucks</div> -->
-			<!-- 		<div class="detail_spent">$4.54</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Starbucks</div> -->
-			<!-- 		<div class="detail_spent">$7.12</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Northwestern Dining: Norris</div> -->
-			<!-- 		<div class="detail_spent">$14.91</div> -->
-			<!-- 	</div> -->
-			<!-- </div> -->
-
-			<!-- <div class="category" id="catClothes" value={{categories.clothes.budget}}> -->
-			<!-- 	<div class="cat_top"> -->
-			<!-- 		<div class="catname">Clothes</div> -->
-			<!-- 		<div class="catspend"><span>${{categories.clothes.spent}}</span>/${{categories.clothes.budget}}</div> -->
-			<!-- 		<div class="catmainbar"> -->			
-
-			<!-- 			<div class="cattotal clothes_color" id="catbarclothes" value= {{categories.clothes.spent}}></div> -->
-
-			<!-- 		</div> -->
-			<!-- 	</div> -->
-				
-			<!-- 	<div class="cat_dropdown" id="clothes_dropdown">details</div> -->
-			<!-- </div> -->
-
-			<!-- <div class="detail" id="clothes_detail"> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Zara</div> -->
-			<!-- 		<div class="detail_spent">44.16</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description"></div> -->
-			<!-- 		<div class="detail_spent"></div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description"></div> -->
-			<!-- 		<div class="detail_spent"></div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description"></div> -->
-			<!-- 		<div class="detail_spent"></div> -->
-			<!-- 	</div> -->
-			<!-- </div> -->
-
-			<!-- <div class="category" id="catAlcohol" value={{categories.alcohol.budget}}> -->
-			<!-- 	<div class="cat_top"> -->
-			<!-- 		<div class="catname">Alcohol</div> -->
-			<!-- 		<div class="catspend"><span>${{categories.alcohol.spent}}</span>/${{categories.alcohol.budget}}</div> -->
-			<!-- 		<div class="catmainbar"> -->
-
-			<!-- 			<div class="cattotal alcohol_color" id="catbaralcohol" value= {{categories.alcohol.spent}}></div> -->
-
-			<!-- 		</div> -->
-			<!-- 	</div> -->
-				
-			<!-- 	<div class="cat_dropdown" id="alcohol_dropdown">details</div> -->
-			<!-- </div> -->
-
-			<!-- <div class="detail" id="alcohol_detail"> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Bar Louie</div> -->
-			<!-- 		<div class="detail_spent">$30.59</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Bar Louie</div> -->
-			<!-- 		<div class="detail_spent">$59.84</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Yeowoosai</div> -->
-			<!-- 		<div class="detail_spent">$24.14</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description"></div> -->
-			<!-- 		<div class="detail_spent"></div> -->
-			<!-- 	</div> -->
-			<!-- </div> -->
-
-<<<<<<< HEAD
-			<!-- <div class="category" id="catTextbook" value={{categories.textbooks.budget}}> -->
-			<!-- 	<div class="cat_top"> -->
-			<!-- 		<div class="catname">Textbooks</div> -->
-			<!-- 		<div class="catspend"><span style="color: red">${{categories.textbooks.spent}}</span>/${{categories.textbooks.budget}}</div> -->
-			<!-- 		<div class="catmainbar"> -->
-=======
-			<div class="category" id="catTextbook" value={{categories.textbooks.budget}}>
-				<div class="cat_top">
-					<div class="catname">Textbooks</div>
-					<div class="catspend"><span>${{categories.textbooks.spent}}</span>/${{categories.textbooks.budget}}</div>
-					<div class="catmainbar">
->>>>>>> 092598596701f11db6378b7347400a45e606c231
-
-			<!-- 			<div class="cattotal textbooks_color" id="catbartextbook" value= {{categories.textbooks.spent}}></div> -->
-
-			<!-- 		</div> -->
-			<!-- 	</div> -->
-				
-			<!-- 	<div class="cat_dropdown" id="textbooks_dropdown">details</div> -->
-			<!-- </div> -->
 			
-			<!-- <div class="detail" id="textbooks_detail"> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Beck's Bookstore</div> -->
-			<!-- 		<div class="detail_spent">$144.98</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description">Northwestern University: Norris Bookstore</div> -->
-			<!-- 		<div class="detail_spent">$99.08</div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description"></div> -->
-			<!-- 		<div class="detail_spent"></div> -->
-			<!-- 	</div> -->
-			<!-- 	<div class="detail_item"> -->
-			<!-- 		<div class="detail_description"></div> -->
-			<!-- 		<div class="detail_spent"></div> -->
-			<!-- 	</div> -->
-			<!-- </div> -->
-
-
-			<!-- <div class="category" id="catOthers" value="0.00"> -->
-			<!-- 	<div class="cat_top"> -->
-			<!-- 		<div class="catname">Others</div> -->
-			<!-- 		<div class="catspend"><span>${{categories.others.spent}}</span>/${{categories.others.budget}}</div> -->
-			<!-- 		<div class="catmainbar"> -->
-			<!-- 			<div class="cattotal other_color" id="catbarother" value="0.00"></div> -->
+				
+			<!-- 	<div class="detail" id="coffee_detail"> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description">Northwestern Dining: Norris</div> -->
+			<!-- 			<div class="detail_spent">$5.64</div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description">Starbucks</div> -->
+			<!-- 			<div class="detail_spent">$4.54</div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description">Starbucks</div> -->
+			<!-- 			<div class="detail_spent">$7.12</div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description">Northwestern Dining: Norris</div> -->
+			<!-- 			<div class="detail_spent">$14.91</div> -->
 			<!-- 		</div> -->
 			<!-- 	</div> -->
 				
-			<!-- 	<div class="cat_dropdown" id="other_dropdown">details</div> -->
-			<!-- </div> -->
-		</div>
-			
+
+			<!-- 	<div class="detail" id="clothes_detail"> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description">Zara</div> -->
+			<!-- 			<div class="detail_spent">44.16</div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description"></div> -->
+			<!-- 			<div class="detail_spent"></div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description"></div> -->
+			<!-- 			<div class="detail_spent"></div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description"></div> -->
+			<!-- 			<div class="detail_spent"></div> -->
+			<!-- 		</div> -->
+			<!-- 	</div> -->
+
+			<!-- 	<div class="detail" id="alcohol_detail"> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description">Bar Louie</div> -->
+			<!-- 			<div class="detail_spent">$30.59</div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description">Bar Louie</div> -->
+			<!-- 			<div class="detail_spent">$59.84</div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description">Yeowoosai</div> -->
+			<!-- 			<div class="detail_spent">$24.14</div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description"></div> -->
+			<!-- 			<div class="detail_spent"></div> -->
+			<!-- 		</div> -->
+			<!-- 	</div> -->
+
+			<!-- 	<div class="detail" id="textbooks_detail"> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description">Beck's Bookstore</div> -->
+			<!-- 			<div class="detail_spent">$144.98</div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description">Northwestern University: Norris Bookstore</div> -->
+			<!-- 			<div class="detail_spent">$99.08</div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description"></div> -->
+			<!-- 			<div class="detail_spent"></div> -->
+			<!-- 		</div> -->
+			<!-- 		<div class="detail_item"> -->
+			<!-- 			<div class="detail_description"></div> -->
+			<!-- 			<div class="detail_spent"></div> -->
+			<!-- 		</div> -->
+			<!-- 	</div> -->
 		
 		<!-- temporarily removed footnote due to bugs with detail dropdowns -->
 		
