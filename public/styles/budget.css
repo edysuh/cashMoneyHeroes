@@ -36,6 +36,8 @@ body {
 	float: left;
 	width: 30%;
 	height: 50px;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 
 #logo_img {
@@ -140,11 +142,21 @@ font-family: "Avenir";
 
 #add_cat {
 	float: left;
-	margin-bottom: 10px;
+	font-size: 16px;
 }
 
 #add_val {
 	float: right;
+}
+
+#save {
+	float: right;
+	width: 6em;
+	margin-right: 0;
+}
+
+#save:hover{
+	cursor: pointer;
 }
 
 .input_box {
@@ -158,6 +170,10 @@ font-family: "Avenir";
 	height: 25px;
 	border: 1px solid lightgrey;
 	margin-right: 6px;
+}
+
+.others_color {
+	background-color: grey;
 }
 
 .food_color {

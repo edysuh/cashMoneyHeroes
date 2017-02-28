@@ -9,7 +9,7 @@
       "spent": "280.20"
     },
     "coffee": {
-      "budget": "44.00",
+      "budget": "45.00",
       "spent": "44.16"
     },
     "clothes": {
@@ -17,20 +17,16 @@
       "spent": "119.12"
     },
     "alcohol": {
-      "budget": "70.00",
+      "budget": "45.00",
       "spent": "60.93"
     },
     "textbooks": {
-      "budget": "150.00",
+      "budget": "217.00",
       "spent": "244.22"
     },
     "extra": {
       "budget": "150.00",
       "spent": "0"
-    },
-    "new": {
-      "budget": "250.00",
-      "spent": 0
     }
   },
   "_locals": {}
