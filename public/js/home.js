@@ -39,21 +39,8 @@ function checkOver() {
 		var category3 = document.getElementById(catbarid);
 		var spent = category3.getAttribute("value");
 		var num_to_change = number[i+5];
-		//var lgth2 = num_to_change.length;
-		//var final = num_to_change.substr(lgth+2, lgth2);
-		//var type = typeof final;
-
-		// console.log(category0);
-		// console.log(category1);
-		// console.log(spent);
-		// console.log(category2);
-		//console.log(lgth);
-		// console.log(lowercase);
-		// console.log(catbarid);
-		// console.log(category3);
-		// console.log(budget);
-		// console.log(number);
-
+		var num_to_change2 = number[i];
+		
 		if (spent >= budget) {
 			num_to_change2.style.color = 'red';
 			num_to_change.style.color = 'red';
