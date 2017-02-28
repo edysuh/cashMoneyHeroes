@@ -42,6 +42,7 @@ function checkOver() {
 	var category3 = document.getElementById(catbarid);
 	var spent = category3.getAttribute("value");
 	var num_to_change = number[i+5];
+	var num_to_change2 = number[i];
 	//var lgth2 = num_to_change.length;
 	//var final = num_to_change.substr(lgth+2, lgth2);
 	//var type = typeof final;
@@ -59,6 +60,7 @@ function checkOver() {
 
 	if (spent >= budget) {
 			//console.log(num_to_change)
+			num_to_change2.style.color = 'red';
 			num_to_change.style.color = 'red';
 		}
 	}
