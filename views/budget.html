@@ -34,34 +34,21 @@
 <!-- categories under this form can be collectively modified -->
 			<div id ="input_budget">
 				<form id="budget_list" action="/budget" method="post">
-									
-					<div class="col_box others_color"></div>
+					
+					<div class="col_box total_color"></div>
 					<div class="cat_name"> Total:</div>
-					<input class="cat_input input_box" type="number" name="extra_budget" step="10" value={{total.budget}}><br>
+					<input class="cat_input input_box" type="number" name="total" step="10" value={{total.budget}}><br>
 					
-					<div class="col_box food_color"></div>
-					<div class="cat_name"> Food:</div>
-					<input class="cat_input input_box" type="number" name="food_budget" step="10" value={{categories.food.budget}}><br>
-					
-					<div class="col_box coffee_color"></div>
-					<div class="cat_name"> Coffee:</div>
-					<input class="cat_input input_box" type="number" name="coffee_budget" step="10" value={{categories.coffee.budget}}><br>
-					
-					<div class="col_box clothes_color"></div>
-					<div class="cat_name"> Clothes:</div>
-					<input class="cat_input input_box" type="number" name="clothes_budget" step="10" value={{categories.clothes.budget}}><br>
-					
-					<div class="col_box alcohol_color"></div>
-					<div class="cat_name"> Alcohol:</div>
-					<input class="cat_input input_box" type="number" name="alcohol_budget" step="10" value={{categories.alcohol.budget}}><br>
-					
-					<div class="col_box textbooks_color"></div>
-					<div class="cat_name"> Textbooks:</div>
-					<input class="cat_input input_box" type="number" name="textbooks_budget" step="10" value={{categories.textbooks.budget}}><br>
-
+					{{#each categories}}
+						<div class="col_box {{@key}}_color"></div>
+						<div class="cat_name"> {{@key}}:</div>
+						<input class="cat_input input_box" 
+									 type="number" 
+									 name="{{@key}}_budget" 
+									 value={{this.budget}}><br>
+					{{/each}}
 
 					<div class="col_box"></div>
-					
 					<div id="add_cat"><input class="input_box" type="text" name="new_cat_name" placeholder="Add category name">:</div>
 					<input class="input_box" id="add_val" type="number" name="new_cat_val" placeholder="Add category value"><br>
 					
@@ -72,6 +59,4 @@
 			</div>
 		</div>
 	</body>
-
-
 </html>

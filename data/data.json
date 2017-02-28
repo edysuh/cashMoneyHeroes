@@ -1,6 +1,6 @@
 {
   "total": {
-    "budget": "8000000.00",
+    "budget": "960.00",
     "spent": "748.63"
   },
   "categories": {
@@ -21,17 +21,27 @@
       "spent": "60.93"
     },
     "textbooks": {
-      "budget": "292.00",
+      "budget": "252.00",
       "spent": "244.22"
     },
     "other": {
-      "budget": "0",
+      "budget": "0.00",
       "spent": "0"
     },
     "extra": {
-      "budget": "2005.00",
+      "budget": "111.00",
       "spent": "0"
+    },
+    "ASD": {
+      "budget": "123.00",
+      "spent": 0
+    },
+    "NEW CATDOG": {
+      "budget": "333.00",
+      "spent": 0
     }
   },
   "_locals": {}
+}{}
+}{}
 }
