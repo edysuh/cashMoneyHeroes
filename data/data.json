@@ -1,6 +1,6 @@
 {
   "total": {
-    "budget": "818.00",
+    "budget": "943.00",
     "spent": "748.63"
   },
   "categories": {
@@ -21,7 +21,7 @@
       "spent": "60.93"
     },
     "textbooks": {
-      "budget": "67.00",
+      "budget": "217.00",
       "spent": "244.22"
     },
     "other": {
@@ -31,6 +31,10 @@
     "extra": {
       "budget": "2005.00",
       "spent": "0"
+    },
+    "Jeff": {
+      "budget": "21.00",
+      "spent": 0
     }
   },
   "_locals": {}

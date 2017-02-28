@@ -22,8 +22,7 @@ function toggleDropDown(el) {
 }
 
 //whenOver process: 1. check for each category if the amount spent is greater than the allocated budget;
-//		            2. if the amount spent is greater than allocated budget, parseInt the amount spent, 
-//					   then change font color of amount spent to red
+//		            2. if the amount spent is greater than allocated budget, change the font color of amount spent
 
 
 function checkOver() {
@@ -51,12 +50,13 @@ function checkOver() {
 	// console.log(category1);
 	// console.log(spent);
 	// console.log(category2);
-	//console.log(lgth);
+	// console.log(lgth);
 	// console.log(lowercase);
 	// console.log(catbarid);
 	// console.log(category3);
 	// console.log(budget);
 	// console.log(number);
+	// console.log(num_to_change);
 
 	if (spent >= budget) {
 			//console.log(num_to_change)
