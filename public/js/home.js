@@ -91,4 +91,4 @@ calcSpendingBarWidth("catbarfood","cat_food");
 calcSpendingBarWidth("catbarcoffee","cat_coffee");
 calcSpendingBarWidth("catbarclothes","cat_clothes");
 calcSpendingBarWidth("catbaralcohol","cat_alcohol");
-calcSpendingBarWidth("catbartextbook","cat_textbook");
+calcSpendingBarWidth("catbartextbooks","cat_textbooks");
