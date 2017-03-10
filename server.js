@@ -64,7 +64,6 @@ app.post('/budget', (req, res) => {
 			oldValue += parseInt(data.categories[category].budget);
 			modifyBudget(category, category_budget);
 		}
-		
 	}
 	
 	if (budget_data["new_cat_name"] && budget_data["new_cat_val"]) {
@@ -73,6 +72,11 @@ app.post('/budget', (req, res) => {
 				"budget": makeStringMoney(budget_data["new_cat_val"]), 
 				"spent": 0 
 			};
+			
+			var category_budget = budget_data["new_cat_val"];
+			
+			total_budget += parseInt(category_budget);
+			// oldValue += parseInt(data.categories[category].budget);
 			
 			fs.writeFile(filename, JSON.stringify(data, null, 2), (err) => {
 				if (err) console.log(err);
